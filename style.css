@@ -70,13 +70,17 @@ span {
 
 
 #about-me {
-  display: grid;
+  align-items: flex-start;
 }
 
 #about-me h2 {
   display: grid;
   font-size: 50px;
   text-align: left;
+}
+
+.container h2 {
+  align-items: flex;
 }
 
 
