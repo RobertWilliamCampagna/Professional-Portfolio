@@ -70,33 +70,108 @@ span {
 
 
 #about-me {
-  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
 }
 
 #about-me h2 {
-  display: grid;
-  font-size: 50px;
+  display: flex;
+  margin: 50px;
+  font-size: 40px;
+  color: coral;
+  border-right-style: solid;
+  border-right-width: thick;
+  border-right-color: dodgerblue;
+}
+#about-me p {
+  font-size: 20px;
+  font-family: sans-serif;
+  justify-content: space-between;
   text-align: left;
 }
 
-.container h2 {
-  align-items: flex;
+
+.work{
+display: flex;
+
+}
+
+.work h2{
+  font-size: 50px;
+  color: coral;
+  margin: 50px;
+  border-right-style: solid;
+  border-right-width: thick;
+  border-right-color: dodgerblue;
+}
+
+.work-photos {
+  display: flexbox;
+  
+  
 }
 
 
 
-.work-image-container {
-  display: grid;
-  grid-column: 1 / 3;
+#lighthouse {
+  display: flexbox;
+  height: 300px;
+  width: 1200px;
+border: darkblue;
+border-style: solid;
+border-right-width: 3px;
+}
 
+#blue-hat {
+  display: inline-flex;
+  flex-direction: row;
+  height: 400px;
+  width: 400px;
+  justify-content: center;
+  border-style: solid;
+  border-color: coral;
+  border-width: thick;
+  margin-left: 100px;
+}
+
+#green-hat {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+  margin-left: 150px;
+  border-style: solid;
+  border-color: coral;
+  border-width: thick;
+}
+
+#contact-me {
+  display: flex;
 }
 
 
+#contact-me h2 {
+  display: inline-flex;
+  font-size: 50px;
+  color: coral;
+  border-right-style: solid;
+  border-right-color: dodgerblue;
+  border-right-width: thick;
+}
 
-
-
-
-
+#contact-me p{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  font-size: 30px;
+  color: blue;
+}
+  
+}
+.footer h2{
+  justify-content: center;
+}
 
 .footer{
   position: fixed;
