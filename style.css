@@ -5,12 +5,21 @@
   text-decoration: none;
 }
 
+body {
+background: rgb(0,52,193);background: radial-gradient(circle, rgba(0,52,193,0.6923144257703081) 0%, rgba(0,146,233,0.9864320728291317) 100%);
+}
+
+section {
+  padding: 60px;
+}
+
+/*  styling for the header  */
 header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: cornflowerblue;
+  background: radial-gradient(circle, rgba(58,131,255,0.8071603641456583) 59%, rgba(89,25,218,0.9668242296918768) 100%);
 }
 
 h1{
@@ -21,6 +30,7 @@ margin: 0px;
 color: coral;
 }
 
+/*  styling for the nab bar in header */
 nav {
 display: block;
 }
@@ -47,6 +57,7 @@ li a:hover{
 }
 
 
+/*  styling for the hero element */
 .hero {
   background-image: url(https://i.imgur.com/IJCoogH.jpg);
   background-size: cover;
@@ -83,75 +94,61 @@ span {
   border-right-width: thick;
   border-right-color: dodgerblue;
 }
+
 #about-me p {
   font-size: 20px;
   font-family: sans-serif;
-  justify-content: space-between;
   text-align: left;
 }
 
 
-.work{
-display: flex;
-
+.work-photos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 3vw);
+    grid-gap: 20px;
 }
 
+
 .work h2{
+  text-align: center;
   font-size: 50px;
   color: coral;
   margin: 50px;
-  border-right-style: solid;
-  border-right-width: thick;
-  border-right-color: dodgerblue;
-}
-
-.work-photos {
-  display: flexbox;
-  
-  
 }
 
 
-
-#lighthouse {
-  display: flexbox;
-  height: 300px;
-  width: 1200px;
+/*  styling and positioning of the images  */
+.work-photos .grid #adaigo-element {
+height: 300px;
+width: 300px;
 border: darkblue;
 border-style: solid;
 border-right-width: 3px;
 }
 
-#blue-hat {
-  display: inline-flex;
-  flex-direction: row;
-  height: 400px;
-  width: 400px;
-  justify-content: center;
+.work-photos .grid #password-generator {
+  display: flex;
+  height: 300px;
+  width: 300px;
   border-style: solid;
   border-color: coral;
   border-width: thick;
   margin-left: 100px;
 }
 
-#green-hat {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 400px;
-  width: 400px;
+.work-photos .grid #workday-scheduler {
+  float: right;
+  height: 300px;
+  width: 300px;
   margin-left: 150px;
   border-style: solid;
   border-color: coral;
   border-width: thick;
 }
 
-#contact-me {
-  display: flex;
-}
 
-
-#contact-me h2 {
+.contact h2{
   display: inline-flex;
   font-size: 50px;
   color: coral;
@@ -160,14 +157,13 @@ border-right-width: 3px;
   border-right-width: thick;
 }
 
-#contact-me p{
+.contact {
+  margin: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding: 30px;
-  font-size: 30px;
   color: blue;
 }
-  
 
 .footer h2{
   justify-content: center;
